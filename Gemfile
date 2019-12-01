@@ -5,6 +5,8 @@ ruby '2.6.3'
 
 gem 'haml', '~> 5.1', '>= 5.1.2'
 
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
