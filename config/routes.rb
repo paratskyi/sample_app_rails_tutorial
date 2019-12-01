@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # root 'static_pages#home'
-  root 'static_pages#home', as: 'static_pages_home'
-  get 'static_pages/help', as: 'static_pages_help'
-  get 'static_pages/about', as: 'static_pages_about'
-  get 'static_pages/contact', as: 'static_pages_contact'
+  root 'static_pages#home', as: 'home'
+  get 'help' => 'static_pages#help', as: 'help'
+  get 'about' => 'static_pages#about', as: 'about'
+  get 'contact' => 'static_pages#contact', as: 'contact'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
