@@ -7,6 +7,8 @@ gem 'haml', '~> 5.1', '>= 5.1.2'
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
