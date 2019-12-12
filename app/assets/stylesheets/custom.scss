@@ -1,7 +1,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import 'mixins';
 @import 'typography';
 @import 'universal';
 @import 'header';
 @import 'footer';
+@import 'sidebar';
+@import 'gravatar';
+@import 'form';
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
