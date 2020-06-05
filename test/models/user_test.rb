@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  
   setup do
     @user = User.new(name: 'Example User', email: 'user@example.com',
                      password: 'foobar', password_confirmation: 'foobar')
@@ -40,7 +39,7 @@ class UserTest < ActiveSupport::TestCase
       assert @user.valid?, "#{valid_address.inspect} should be valid"
     end
   end
-  
+
   test 'email validation should reject invalid addresses' do
     invalid_addresses = %w[foo@bar..com. user@example,com user_at_foo.org user.name@example.
                            foo@bar_baz.com foo@bar+baz.com]
@@ -56,7 +55,6 @@ class UserTest < ActiveSupport::TestCase
     @user.save
     assert_not duplicate_user.valid?
   end
-
 
   test 'email address should be saved as lower-case' do
     mixed_case_email = 'Foo@ExAMPle.CoM'

@@ -4,7 +4,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test 'should get home' do
     get home_url
     assert_response :success
-    assert_select 'title', full_title()
+    assert_select 'title', full_title
   end
 
   test 'should get help' do
@@ -24,7 +24,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select 'title', full_title('Contact')
   end
-  
+
   test 'should get sign up' do
     get signup_url
     assert_response :success

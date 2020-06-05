@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   def show
     @user = User.find(params[:id])
   end
@@ -13,8 +12,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = 'Welcome to the Sample App!'
       redirect_to @user
-    elsif
-      render 'new'
+    elsif render 'new'
     end
   end
 
