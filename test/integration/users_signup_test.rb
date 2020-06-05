@@ -4,8 +4,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   setup do
     @invalid_user = { user: { name: '', email: 'user@invalid', password: 'foo',
                               password_confirmation: 'bar' } }
-    @valid_user = { user: { name: 'Example User', email: 'user@example.com',
-                            password: 'password', password_confirmation: 'password' } }
+    @valid_user = { user: { name: 'Example User',
+                            email: 'user@example.com',
+                            password: 'password',
+                            password_confirmation: 'password' } }
   end
 
   test 'invalid signup information' do
