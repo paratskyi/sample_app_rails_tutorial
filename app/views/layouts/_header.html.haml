@@ -1,8 +1,13 @@
-%header.navbar.navbar-fixed-top.navbar-inverse
-  .container
-    = link_to "sample app", home_path, id: "logo"
+%header.navbar.navbar-expand.navbar-fixed-top.navbar-inverse
+  %a.navbar-brand{:href => home_path, id: "logo"} sample app
+  %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
     %nav
-      %ul.nav.navbar-nav.navbar-right
-        %li= link_to "Home",   home_path
-        %li= link_to "Help",   help_path
-        %li= link_to "Log in", '#'
+      %ul.navbar-nav.mr-auto.navbar-right
+        %li.nav-item
+          %a.nav-link{:href => home_path} Home
+        %li.nav-item
+          %a.nav-link{:href => help_path} Help
+        %li.nav-item
+          %a.nav-link{:href => '#'} Log in        
