@@ -4,7 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 gem 'haml', '~> 5.1', '>= 5.1.2'
-
+# Use jQuery
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+# Use Bootstrap for layout
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'

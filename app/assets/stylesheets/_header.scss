@@ -7,10 +7,15 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
 
   &:hover {
     text-decoration: none;
   }
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #343a40;
+  color: #ffffffbf;
 }
