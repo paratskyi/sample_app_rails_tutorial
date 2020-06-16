@@ -1,0 +1,7 @@
+%h1 Sample App
+%p
+  Привет, #{@user.name}!
+%p
+  Добро пожаловать в Учебное Приложение! Перейдите по ссылке для активации аккаунта:
+= link_to "Activate", edit_account_activation_url(@user.activation_token, |
+  email: @user.email)                                                     |

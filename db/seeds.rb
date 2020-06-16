@@ -9,7 +9,9 @@ User.create!(name: 'paratskiy',
              email: 'bog4242@gmail.com',
              password: '12345678-',
              password_confirmation: '12345678-',
-             admin: true)
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 
 99.times do |_n|
   name  = FFaker::Name.name
@@ -18,5 +20,7 @@ User.create!(name: 'paratskiy',
   User.create!(name: name,
                email: email,
                password: password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 end
