@@ -112,7 +112,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'sleepy-peak-55113.herokuapp.com'
+  host = 'damp-caverns-82220.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     address: 'smtp.sendgrid.net',
