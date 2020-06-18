@@ -28,4 +28,19 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get users_path
     assert_select 'a', text: 'delete', count: 0
   end
+
+  test 'index as not-logged-in' do
+    get users_path
+    assert_redirected_to login_path
+    follow_redirect!
+    assert_select 'div.alert-danger'
+  end
+
+  test 'index should not show non activated users' do
+    log_in_as(@admin)
+    user = users(:lana)
+    user.toggle!(:activated)
+    get users_path
+    assert_select 'a[href=?]', user_path(user), text: user.name, count: 0
+  end
 end
