@@ -5,3 +5,10 @@
       %h1
         = gravatar_for @user
         = @user.name
+  .col-md-8
+    - if @user.miniposts.any?
+      %h3
+        Miniposts (#{@user.miniposts.count})
+      %ol.miniposts
+        = render @miniposts
+      = will_paginate @miniposts

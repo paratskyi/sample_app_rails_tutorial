@@ -11,8 +11,6 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
 
-gem 'bcrypt', '~> 3.1', '>= 3.1.13'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
@@ -30,8 +28,15 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', '~> 3.1.7'
+# Upload files in your Ruby applications
+gem 'carrierwave', '~> 2.1'
+# Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+# The Ruby cloud services library
+gem 'fog', '~> 2.2'
+# Shared classes and tests for fog providers and services.
+gem 'fog-core', '~> 2.2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
