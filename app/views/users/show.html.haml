@@ -5,7 +5,10 @@
       %h1
         = gravatar_for @user
         = @user.name
-  .col-md-8
+    %section.stats
+      = render 'shared/stats'
+  .col-md-8.content
+    = render 'follow_form' if logged_in?
     - if @user.miniposts.any?
       %h3
         Miniposts (#{@user.miniposts.count})

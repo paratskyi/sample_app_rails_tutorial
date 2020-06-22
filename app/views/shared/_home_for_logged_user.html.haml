@@ -2,8 +2,10 @@
   %aside.col-md-4
     %section.user_info
       = render 'shared/user_info'
+    %section.stats
+      = render 'shared/stats'
     %section.minipost_form
       = render 'shared/minipost_form'
-  .col-md-8
-    %h3 Micropost Feed
+  .col-md-8.content
+    %h3 Minipost Feed
     = render 'shared/feed'
