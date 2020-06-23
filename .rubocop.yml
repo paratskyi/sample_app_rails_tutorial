@@ -6,6 +6,8 @@ AllCops:
     - 'spec/rails_helper.rb'
     - 'test/channels/application_cable/connection_test.rb'
     - 'test/test_helper.rb'
+    - 'db/schema.rb'
+    - 'config/environments/*'
     
 Style/FrozenStringLiteralComment:
   Enabled: false
